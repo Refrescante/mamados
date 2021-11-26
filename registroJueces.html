@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300&display=swap');
+    </style>
+    <title>Registro de Jueces</title>
+</head>
+
+<body>
+    <h1>REGISTRO FFEJAL</h1>
+
+    <form action="conexion.php" method="post" class="formulario">
+
+        <fieldset>
+            <legend> Información Personal </legend> 
+            <p> Ingresa tu información personal </p>
+
+            <div>
+                <label> Nombre(s)* <br>
+                    <input type="text" name="nombreJuez" placeholder="Nombre(s)" required>
+                </label>
+            </div>
+
+            <br>
+
+            <div>
+                <label> Apellido Paterno* <br>
+                    <input type="text" name="apPaternoJuez" placeholder="Apellido Paterno" required>
+                </label>
+            </div>
+
+            <br>
+
+            <div>
+                <label> Apellido Materno <br>
+                    <input type="text" name="apMaternoJuez" placeholder="Apellido Materno">
+                </label>
+            </div>
+
+            <br>
+
+            <div>
+                <label>
+                    Correo electronico* <br>
+                    <input type="email" name="emailJuez" placeholder="Correo Electronico" required>
+                </label>
+            </div>
+
+            <br>
+
+            <div>
+                <label>
+                    Telefono Celular* <br>
+                    <input type="tel" name="celularJuez" placeholder="Telefono Celular" required>
+                </label>
+            </div>
+
+            <br> <br>
+        </fieldset>
+
+        <button type="submit" name="datosJueces" value="Enviar datos" class="boton-verde"> Enviar Datos </button>
+        <button type="reset" name="Boarrar Datos" class="boton-rojo"> Limpiar Formulario </button><br> <br>
+    </form>
+
+    <nav>
+        <a href="Index.html"> Regresar al inicio de sesión </a>
+    </nav>
+
+</body>
+
+</html>
